@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.music.lyricsync.LyricView
+        android:id="@+id/mylrc"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dip"
+        android:layout_marginTop="50dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="单句得分：78分"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:text="总得分：400分"
+            android:layout_height="fill_parent" />
+        
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300px" >
+
+        <com.music.lyricsync.LevelLineView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.music.lyricsync.LevelLineView>
+
+        <com.music.lyricsync.ScoreLineView
+            android:id="@+id/svLine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.music.lyricsync.ScoreLineView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="record"
+            android:text="录音" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stopRecord"
+            android:text="停止录音" />
+
+        <Button
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="replay"
+            android:text="重播" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekbarmusic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5px"
+            android:progress="0" />
+    </LinearLayout>
+
+</LinearLayout>

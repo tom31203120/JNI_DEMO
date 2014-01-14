@@ -1,0 +1,21 @@
+# view res/layout/main.xml #generated:39
+-keep class com.music.lyricsync.LevelLineView { <init>(...); }
+
+# view res/layout/main.xml #generated:8
+-keep class com.music.lyricsync.LyricView { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.music.lyricsync.MainActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:44
+-keep class com.music.lyricsync.ScoreLineView { <init>(...); }
+
+# onClick res/layout/main.xml #generated:57
+-keepclassmembers class * { *** record(...); }
+
+# onClick res/layout/main.xml #generated:69
+-keepclassmembers class * { *** replay(...); }
+
+# onClick res/layout/main.xml #generated:63
+-keepclassmembers class * { *** stopRecord(...); }
+
